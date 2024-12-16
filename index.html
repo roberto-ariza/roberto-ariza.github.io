@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instalación de Persianas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .form-section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-size: 1em;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instalación de Persianas</h1>
+        <p>Roberto Ariza Molina</p>
+        <p>Comienza el proceso de instalación de tus persianas con nuestro formulario.</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Formulario de Instalación</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección de Instalación:</label>
+            <textarea id="direccion" name="direccion" rows="4" required></textarea>
+
+            <label for="tipo-persiana">Tipo de Persiana:</label>
+            <select id="tipo-persiana" name="tipo-persiana" required>
+                <option value="veneciana">Veneciana</option>
+                <option value="roler">Roler</option>
+                <option value="panel-japon">Panel Japonés</option>
+                <option value="estores">Estores</option>
+            </select>
+
+            <label for="tamano">Tamaño de la Ventana (en cm):</label>
+            <input type="number" id="tamano" name="tamano" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Instalación de Persianas. Todos los derechos reservados ROBERTO ARIZA MOLINA .</p>
+    </footer>
+</body>
+</html>
