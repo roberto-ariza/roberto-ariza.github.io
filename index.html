@@ -6,6 +6,8 @@
   <title>Curso de Mecánico de Rally</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -80,16 +82,32 @@
       object-fit: cover;
       border-radius: 12px;
     }
+
+    /* Animaciones personalizadas */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out;
+    }
   </style>
 </head>
 
 <body class="bg-color3 text-gray-200">
   <!-- Header -->
   <header class="bg-color1 text-color5 py-20 px-10 text-left flex items-center justify-center h-screen">
-    <div class="max-w-lg">
-      <h1 class="text-5xl font-bold mb-4">¡Conviértete en Mecánico de Rally! 🏎️💨</h1>
+    <div class="max-w-lg animate__animated animate__fadeInLeft">
+      <h1 class="text-5xl font-bold mb-4 text-yellow-400">¡Conviértete en Mecánico de Rally! 🏎️💨</h1>
       <p class="text-xl mb-6">Aprende a mantener y reparar vehículos de rally en condiciones extremas. ¡Haz que el coche corra con su máximo potencial! 🔧</p>
-      <a href="https://www.example.com" target="_blank" class="bg-color4 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 btn">¡Inscríbete ahora!</a>
+      <a href="https://www.example.com" target="_blank" class="bg-color4 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 btn animate__animated animate__pulse animate__infinite">¡Inscríbete ahora!</a>
     </div>
   </header>
 
@@ -105,21 +123,21 @@
 
   <!-- ¿Qué vas a aprender? -->
   <section id="aprendizaje" class="py-16 px-6 bg-color2">
-    <h2 class="text-3xl font-semibold text-center mb-10">¿Qué vas a aprender? 🛠️</h2>
+    <h2 class="text-3xl font-semibold text-center mb-10 animate__animated animate__fadeIn">¿Qué vas a aprender? 🛠️</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-color3 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow">
+      <div class="bg-color3 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow animate__animated animate__fadeInUp">
         <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mantenimiento Preventivo" class="w-full h-48 object-cover mb-4 rounded-image">
         <h3 class="text-xl font-bold mb-4">Mantenimiento Preventivo</h3>
         <p>Aprende a revisar y mantener los vehículos antes de la carrera, garantizando un rendimiento óptimo.</p>
         <a href="https://example.com/mantenimiento" target="_blank" class="text-color2 mt-4 inline-block">Leer más</a>
       </div>
-      <div class="bg-color4 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow">
+      <div class="bg-color4 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow animate__animated animate__fadeInUp animate__delay-1s">
         <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Reparación de Emergencia" class="w-full h-48 object-cover mb-4 rounded-image">
         <h3 class="text-xl font-bold mb-4">Reparación de Emergencia</h3>
         <p>Desarrolla habilidades para reparar cualquier avería durante una carrera de rally, ¡en tiempo récord!</p>
         <a href="https://example.com/reparacion" target="_blank" class="text-color2 mt-4 inline-block">Leer más</a>
       </div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow">
+      <div class="bg-color5 rounded-lg shadow-md p-6 text-center transition duration-300 hover-shadow animate__animated animate__fadeInUp animate__delay-2s">
         <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mejora del Rendimiento" class="w-full h-48 object-cover mb-4 rounded-image">
         <h3 class="text-xl font-bold mb-4">Mejora del Rendimiento</h3>
         <p>Aprende técnicas para mejorar el rendimiento del vehículo, desde la suspensión hasta el sistema de frenos.</p>
@@ -131,10 +149,10 @@
   <!-- Quién lo enseña -->
   <section id="instructor" class="py-16 px-6 bg-color3">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-      <div class="text-center">
+      <div class="text-center animate__animated animate__fadeInLeft">
         <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Profesor" class="instructor-image w-48 h-48 mx-auto shadow-lg">
       </div>
-      <div>
+      <div class="animate__animated animate__fadeInRight">
         <h2 class="text-3xl font-semibold mb-4">Tu instructor, Roberto Ariza 🛠️</h2>
         <p>Roberto es un mecánico con más de 10 años de experiencia trabajando en el mundo de los rallys. Ha trabajado en algunos de los equipos más prestigiosos y te enseñará todo lo que necesitas saber para convertirte en un experto mecánico de rally. Además, Roberto es conocido por su enfoque práctico y su habilidad para explicar conceptos complejos de manera sencilla.</p>
       </div>
@@ -143,85 +161,49 @@
 
   <!-- Galería de imágenes -->
   <section class="py-16 px-6 bg-color4">
-    <h2 class="text-3xl font-semibold text-center mb-10">Galería de Rally 🏁</h2>
+    <h2 class="text-3xl font-semibold text-center mb-10 animate__animated animate__fadeIn">Galería de Rally 🏁</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 1" class="gallery-image">
-      <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 2" class="gallery-image">
-      <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 3" class="gallery-image">
+      <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 1" class="gallery-image animate__animated animate__fadeIn">
+      <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 2" class="gallery-image animate__animated animate__fadeIn animate__delay-1s">
+      <img src="https://images.unsplash.com/photo-1603383928972-0b3e0b5d2b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rally 3" class="gallery-image animate__animated animate__fadeIn animate__delay-2s">
     </div>
   </section>
 
   <!-- Temario del curso -->
   <section id="temario" class="py-16 px-6 bg-color2">
-    <h2 class="text-3xl font-semibold text-center mb-10">Temario del Curso 📚</h2>
+    <h2 class="text-3xl font-semibold text-center mb-10 animate__animated animate__fadeIn">Temario del Curso 📚</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow">1. Introducción al Mundo del Rally</div>
-      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow">2. Mantenimiento y Revisión Básica del Vehículo</div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">3. Reparaciones Rápidas en la Pista</div>
-      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow">4. Ajustes de Suspensión y Neumáticos</div>
-      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow">5. Sistemas de Frenos y Motor</div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">6. Diagnóstico de Averías en Rally</div>
-      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow">7. Equipamiento Específico para Rally</div>
-      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow">8. Estrategias de Reparación en Condiciones Extremas</div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">9. Comunicaciones en la Pista con el Equipo</div>
-      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow">10. Preparación del Vehículo para Competencias</div>
-      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow">11. Seguridad en el Rally</div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">12. Proyecto Final: Reparación en Vivo</div>
+      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp">1. Introducción al Mundo del Rally</div>
+      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-1s">2. Mantenimiento y Revisión Básica del Vehículo</div>
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-2s">3. Reparaciones Rápidas en la Pista</div>
+      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp">4. Ajustes de Suspensión y Neumáticos</div>
+      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-1s">5. Sistemas de Frenos y Motor</div>
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-2s">6. Diagnóstico de Averías en Rally</div>
+      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp">7. Equipamiento Específico para Rally</div>
+      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-1s">8. Estrategias de Reparación en Condiciones Extremas</div>
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-2s">9. Comunicaciones en la Pista con el Equipo</div>
+      <div class="bg-color3 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp">10. Preparación del Vehículo para Competencias</div>
+      <div class="bg-color4 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-1s">11. Seguridad en el Rally</div>
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInUp animate__delay-2s">12. Proyecto Final: Reparación en Vivo</div>
     </div>
   </section>
 
   <!-- Preguntas frecuentes -->
   <section id="faq" class="py-16 px-6 bg-color4">
-    <h2 class="text-3xl font-semibold text-center mb-10">Preguntas Frecuentes ❓</h2>
+    <h2 class="text-3xl font-semibold text-center mb-10 animate__animated animate__fadeIn">Preguntas Frecuentes ❓</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInLeft">
         <h3 class="font-semibold mb-2">¿Cuánto dura el curso?</h3>
         <p>El curso tiene una duración de 12 semanas, con clases teóricas y prácticas que suman un total de 120 horas. Además, incluye un proyecto final en el que podrás aplicar todo lo aprendido en un entorno real de rally.</p>
       </div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInRight">
         <h3 class="font-semibold mb-2">¿Necesito experiencia previa en mecánica?</h3>
         <p>No es necesario tener experiencia previa en mecánica, aunque es recomendable tener conocimientos básicos. El curso está diseñado para que cualquier persona interesada en el mundo del rally pueda aprender desde cero.</p>
       </div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInLeft">
         <h3 class="font-semibold mb-2">¿Qué materiales necesito para el curso?</h3>
         <p>Se te proporcionará todo el material necesario, incluyendo herramientas y vehículos para las prácticas. Solo necesitas traer ropa cómoda y ganas de aprender.</p>
       </div>
-      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow">
+      <div class="bg-color5 rounded-lg shadow-md p-6 hover-shadow animate__animated animate__fadeInRight">
         <h3 class="font-semibold mb-2">¿Hay algún certificado al finalizar el curso?</h3>
-        <p>Sí, al finalizar el curso y aprobar el proyecto final, recibirás un certificado acreditado que avala tus conocimientos como mecánico de rally.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Precio -->
-  <section id="precio" class="py-16 px-6 bg-color3">
-    <h2 class="text-3xl font-semibold text-center mb-10">Precio del Curso 💰</h2>
-    <div class="text-center">
-      <p class="text-2xl font-bold mb-4">$1,200 USD</p>
-      <p class="mb-6">Pago único o en cuotas mensuales sin intereses.</p>
-      <a href="https://www.example.com" target="_blank" class="bg-color4 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 btn">¡Inscríbete ahora!</a>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="py-16 px-6 bg-color2">
-    <h2 class="text-3xl font-semibold text-center mb-10">Contacto 📞</h2>
-    <div class="text-center">
-      <p class="mb-4">¿Tienes alguna duda? ¡No dudes en contactarnos!</p>
-      <p class="mb-4">Email: <a href="mailto:info@cursomecanicorally.com" class="text-color2 hover:text-blue-600">info@cursomecanicorally.com</a></p>
-      <p class="mb-4">Teléfono: <a href="tel:+123456789" class="text-color2 hover:text-blue-600">+1 (234) 567-89</a></p>
-      <p class="mb-4">Síguenos en redes sociales:</p>
-      <div class="flex justify-center space-x-4">
-        <a href="https://facebook.com" target="_blank" class="text-color2 hover:text-blue-600">Facebook</a>
-        <a href="https://twitter.com" target="_blank" class="text-color2 hover:text-blue-400">Twitter</a>
-        <a href="https://instagram.com" target="_blank" class="text-color2 hover:text-pink-600">Instagram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-8 bg-color5 text-center">
-    <p class="text-sm">© 2023 Curso de Mecánico de Rally. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
+        <p>Sí, al finalizar el curso y aprobar el proyecto final, recibirás un certificado acreditado que avala tus conocimientos como mecánico de
